@@ -14,9 +14,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://testapi.io/api/mohammad75-github/weather")
       .then(response => response.json())
-      .then(users => this.setState({ monsters: users })); //another api for test with    more than 50 users! https://testapi.io/api/mohammad75-github/weather
+      .then(users => this.setState({ monsters: users })); //another api for test with    more than 50 users! https://testapi.io/api/mohammad75-github/weather 
+      //default api is : https://jsonplaceholder.typicode.com/users
   }
 
   handleChange = (e) => {this.setState({searchField: e.target.value});}
