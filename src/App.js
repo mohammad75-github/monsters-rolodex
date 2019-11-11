@@ -14,9 +14,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://testapi.io/api/mohammad75-github/weather")
+    fetch("https://testapi.io/api/mohammad75-github/monsters")
       .then(response => response.json())
-      .then(users => this.setState({ monsters: users })); //another api for test with    more than 50 users! https://testapi.io/api/mohammad75-github/weather 
+      .then(users => this.setState({ monsters: users })); //another api for test with    more than 50 users! https://testapi.io/api/mohammad75-github/monsters 
       //default api is : https://jsonplaceholder.typicode.com/users
   }
 
